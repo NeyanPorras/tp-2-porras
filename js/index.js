@@ -1,10 +1,23 @@
 const meriendas = ['Medialunas', 'Frutas', 'Galletas', 'Cafe', 'Té', 'Licuados']
-
+const iconos = ['🍩', '🍎', '🍪', '☕', '🍵', '🥤']
 const listaMeriendas = document.getElementById('lista-meriendas')
 
-meriendas.forEach((merienda) => {
+meriendas.forEach((merienda, index) => {
+  const icono = iconos[index] || '🍽️'
+
   const li = document.createElement('li')
-  li.textContent = merienda
+  li.classList.add('card-merienda')
+
+  const spanIcono = document.createElement('span')
+  spanIcono.textContent = icono
+  spanIcono.classList.add('icono-merienda')
+
+  const spanTexto = document.createElement('span')
+  spanTexto.textContent = merienda
+  spanTexto.classList.add('texto-merienda')
+
+  li.appendChild(spanIcono)
+  li.appendChild(spanTexto)
   listaMeriendas.appendChild(li)
 })
 
@@ -13,5 +26,5 @@ const cantidadEl = document.getElementById('cantidad-meriendas')
 
 boton.addEventListener('click', () => {
   const cantidad = meriendas.length
-  cantidadEl.textContent = `Cantidad de meriendas: ${cantidad}`
+  cantidadEl.textContent = cantidad.toString()
 })

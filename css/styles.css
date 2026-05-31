@@ -1,0 +1,186 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+header {
+  background-color: #0f2120;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+/* Meriendas */
+
+#lista-meriendas {
+  padding: 0;
+  margin: 24px 0;
+}
+
+.info-meriendas {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid #c2c3c4;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 75, 50, 0.12);
+}
+
+.card-merienda {
+  background-color: #fff;
+  border: 1px solid #c2c3c4;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 75, 50, 0.12);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.card-merienda:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s;
+}
+
+.icono-merienda {
+  font-size: 24px;
+}
+
+.texto-merienda {
+  font-weight: bold;
+}
+
+#contador-meriendas {
+  font-weight: bold;
+}
+
+#boton-cantidad {
+  border: none;
+  background-color: #214136;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#boton-cantidad:hover {
+  background-color: #0f2120;
+}
+/* Destacados */
+
+.destacados-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.destacado {
+  width: 400px;
+  padding: 15px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.destacado:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s;
+}
+
+.selected {
+  background-color: lightgreen;
+  border: 2px solid green;
+}
+
+#contador-selected {
+  font-weight: bold;
+}
+
+#cantidad-meriendas {
+  font-weight: bold;
+}
+
+/* Listado de juegos */
+#lista-juegos {
+  padding: 0;
+}
+
+.card-list {
+  padding: 16px;
+  border: 1px solid #c2c3c4;
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 75, 50, 0.12);
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.titulo-juego {
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+}
+
+.plataforma {
+  font-size: 14px;
+  color: white;
+  background-color: #214136;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+
+.filtros {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.filtros button {
+  border: none;
+  background-color: #214136;
+  padding: 8px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.filtros button:hover {
+  background-color: #0f2120;
+}
