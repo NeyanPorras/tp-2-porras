@@ -36,7 +36,7 @@ const juegos = [
     plataforma: 'PC'
   },
   {
-    nombre: 'FIFA 2015',
+    nombre: 'FIFA 15',
     imgUrl:
       'https://cdn2.steamgriddb.com/icon_thumb/08fb104b0f2f838f3ce2d2b3741a12c2.png',
     plataforma: 'PS2'
