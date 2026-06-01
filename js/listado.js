@@ -42,7 +42,7 @@ const juegos = [
     plataforma: 'PS2'
   },
   {
-    nombre: 'GTA IV San Andreas',
+    nombre: 'GTA IV',
     imgUrl:
       'https://cdn2.steamgriddb.com/icon_thumb/b7784c8bc13cfa7214f249fef97abfe9.png',
     plataforma: 'PS3'
